@@ -1,38 +1,753 @@
-.App {
-  text-align: center;
+/* *
+{
+    border: 1px solid;
+} */
+body {
+  margin: 0;
+  font-family: 'Bai Jamjuree', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  font-family: 'Bai Jamjuree', sans-serif;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg {
+  width: 100%;
+  height: 48%;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.c {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headtext {
+  color: hsl(210, 10%, 33%);
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.paratext {
+  color: hsl(201, 11%, 66%);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300;
+  width: 45%;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+}
+
+.iosbtn {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 38px;
+  border: none;
+  background-color: hsl(201, 11%, 69%);
+  border-radius: 24px;
+  box-shadow: 0 3px 2px 0 rgba(71, 6, 57, 0.4), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+#iOS {
+  margin-right: 15px;
+}
+
+.androidbtn {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 13px 38px;
+  border: none;
+  background-color: hsl(233, 100%, 77%);
+  border-radius: 24px;
+  box-shadow: 0 3px 2px 0 rgba(7, 6, 71, 0.4), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec2head {
+  color: hsl(210, 10%, 33%);
+  font-size: 31px;
+  margin: 150px 0 0 0;
+}
+
+.sec2para {
+  color: hsl(201, 11%, 66%);
+  font-size: 17px;
+  font-weight: 300;
+  width: 45%;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.section3 {
+  margin-top: 70px;
+  display: flex;
+}
+
+.computer {
+  transform: translateX(-27px);
+  width: 48%;
+  height: auto;
+}
+
+.stuff {
+  padding-left: 5%;
+  padding-top: 50px;
+}
+
+.head {
+  color: hsl(210, 10%, 33%);
+  font-size: 22px;
+}
+
+.para {
+  color: hsl(201, 11%, 66%);
+  font-size: 14px;
+  width: 55%;
+  line-height: 1.8;
+}
+
+.is-sec {
+  margin-bottom: 35px;
+}
+
+.sec4img {
+  width: 60%;
+  margin-top: 80px;
+}
+
+.section4 {
+  display: flex;
+  margin: 70px auto;
+  width: 68%;
+}
+
+.blacklist-img {
+  margin-bottom: 22px;
+}
+
+.section4a {
+  text-align: center;
+  margin-right: 3%;
+}
+
+.sec4head {
+  color: hsl(210, 10%, 33%);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.sec4para {
+  color: hsl(201, 11%, 66%);
+  font-size: 16px;
+}
+
+#s4 {
+  margin-right: 0;
+}
+
+.section5 {
+  display: flex;
+  margin-top: 130;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: baseline;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 10%;
+  height: 45px;
+  margin-right: 6%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#m {
+  height: 30px;
+}
+
+#hp {
+  width: 8%;
+  height: 50px;
+}
+
+#v {
+  width: 7%;
+  height: 30px;
+  margin: 0;
+}
+
+#sec6head {
+  font-size: 35px;
+}
+
+#section6 {
+  margin-bottom: 140px;
+}
+
+.section7 {
+  background-color: hsl(209, 100%, 98%);
+  padding: 25px 13% 10 13%;
+  display: flex;
+}
+
+.cc {
+  width: 50px;
+  height: 50px;
+  margin-right: 13%;
+  margin-top: 20px;
+}
+
+.footers {
+  display: flex;
+  width: 45%;
+}
+
+.foot {
+  cursor: pointer;
+  font-size: 15px;
+  color: hsl(210, 10%, 33%);
+  white-space: nowrap;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.foot:hover {
+  color: hsl(201, 11%, 66%);
+}
+
+.x {
+  margin-right: 20%;
+}
+
+.footericons {
+  display: flex;
+  margin: auto 0 auto auto;
+}
+
+.fb {
+  width: 20px;
+  height: 20px;
+  margin-right: 40%;
+  cursor: pointer;
+  color: hsl(201, 11%, 66%);
+}
+
+#ig {
+  margin-right: 0;
+}
+
+@media (min-width: 1400px) {
+  .section3 {
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .computer {
+    margin-left: 7%;
+    transform: translateX(0);
+    width: 691px;
+    height: 482px;
+  }
+
+  .sec4img {
+    width: 864px;
+    height: 548px;
+  }
+
+  .section4a {
+    width: 272px;
+  }
+
+  .section4 {
+    width: 972px;
+  }
+
+  #bl4 {
+    width: 272px;
+  }
+
+  .logo {
+    width: 144px;
+    margin-right: 4%;
+  }
+
+  #v {
+    width: 120px;
+  }
+
+  #hp {
+    width: 120px;
+  }
+}
+
+@media (max-width:1024px) {
+  #bl4 {
+    width: 80%;
+  }
+
+  .c {
+    width: 90px;
+    height: 90px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+
+  .bg {
+    height: 30%;
+  }
+
+  .headtext {
+    font-size: 28px;
+  }
+
+  .paratext {
+    font-size: 13px;
+    width: 32%;
+  }
+
+  .androidbtn {
+    padding: 8px 30px;
+    font-size: 13px;
+  }
+
+  .iosbtn {
+    padding: 8px 30px;
+    font-size: 13px;
+  }
+
+  .sec2head {
+    font-size: 28px;
+    margin-top: 90px;
+  }
+
+  .sec2para {
+    font-size: 12px;
+    width: 35%;
+  }
+
+  .computer {
+    height: 350;
+  }
+
+  .head {
+    font-size: 18px;
+  }
+
+  .para {
+    font-size: 12px;
+  }
+
+  .is-sec {
+    margin-bottom: 15px;
+  }
+
+  .stuff {
+    padding-top: 25;
+  }
+
+  .sec4img {
+    width: 50%;
+  }
+
+  .sec4head {
+    font-size: 20;
+  }
+
+  #cb {
+    margin-top: 5;
+  }
+
+  .sec4para {
+    font-size: 13px;
+  }
+
+  #sec6head {
+    font-size: 28;
+  }
+
+  .section5 {
+    margin-top: 50px;
+  }
+
+  .logo {
+    width: 10%;
+    height: 26;
+  }
+
+  #hp {
+    height: 28px;
+  }
+
+  #v {
+    height: 17;
+    width: 11%;
+  }
+
+  .section7 {
+    padding: 20 9% 6 9%;
+  }
+
+  .cc {
+    margin-right: 10%;
+    width: 35;
+    height: 35;
+    margin-top: 10;
+  }
+
+  .foot {
+    margin-bottom: 15px;
+    font-size: 12;
+  }
+
+  .footericons {
+    margin-right: 8%;
+  }
+}
+
+
+@media (max-width:600px) {
+  .computer {
+    height: 200px;
+  }
+
+  .bg {
+    height: 24%;
+  }
+
+  .c {
+    width: 70;
+    height: 70;
+    margin-top: 70;
+    margin-bottom: 70;
+  }
+
+  .headtext {
+    font-size: 20;
+  }
+
+  .iosbtn {
+    padding: 5 20;
+    font-size: 9;
+  }
+
+  .androidbtn {
+    padding: 5 20;
+    font-size: 9;
+  }
+
+  .buttons {
+    margin-top: 15px;
+  }
+
+  .paratext {
+    font-size: 9;
+    width: 50%;
+  }
+
+  .sec2head {
+    font-size: 20;
+    margin-top: 65;
+  }
+
+  .sec2para {
+    font-size: 9;
+    width: 50%;
+  }
+
+  .head {
+    font-size: 13;
+  }
+
+  .para {
+    font-size: 9;
+  }
+
+  .sec4img {
+    margin-top: 50;
+  }
+
+  .stuff {
+    padding-top: 0;
+  }
+
+  .blacklist-img {
+    width: 27;
+    height: 22;
+  }
+
+  #eye {
+    height: 18;
+  }
+
+  .sec4head {
+    font-size: 12px;
+  }
+
+  .sec4para {
+    font-size: 8;
+  }
+
+  .logo {
+    width: 45;
+    height: 13;
+  }
+
+  #m {
+    height: 11;
+  }
+
+  #hp {
+    height: 15;
+  }
+
+  .v {
+    height: 8;
+  }
+
+  .section4 {
+    margin-bottom: 40;
+  }
+
+  .section5 {
+    margin-top: 20px;
+  }
+
+  #sec6head {
+    font-size: 18;
+  }
+
+  #section6 {
+    margin-bottom: 70;
+  }
+
+  .fb {
+    width: 13;
+    height: 13;
+  }
+
+  .foot {
+    font-size: 9;
+  }
+}
+
+@media (max-width:375px) {
+  .bg {
+    height: auto;
+  }
+
+  .c {
+    width: auto;
+    height: auto;
+    margin-top: 130;
+    margin-bottom: 80;
+  }
+
+  .headtext {
+    font-size: 30;
+    width: 85%;
+  }
+
+  .paratext {
+    font-size: 16;
+    line-height: 1.4;
+    width: 80%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .iosbtn {
+    width: 70%;
+    padding-top: 10;
+    padding-bottom: 10;
+    margin-bottom: 27;
+    margin-right: 0;
+    font-size: 15;
+  }
+
+  #iOS {
+    margin-right: 0;
+  }
+
+  .androidbtn {
+    width: 70%;
+
+    padding-top: 10;
+    padding-bottom: 10;
+    font-size: 15;
+  }
+
+  .sec2head {
+    font-size: 25;
+    width: 60%;
+    text-align: center;
+  }
+
+  .sec2para {
+    font-size: 15;
+    width: 80%;
+    line-height: 1.5;
+  }
+
+  .section3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .computer {
+    transform: translateX(0);
+    width: 80%;
+    height: auto;
+    margin-bottom: 40;
+  }
+
+  .head {
+    font-size: 25;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .para {
+    font-size: 15;
+    text-align: center;
+    width: 80%;
+    line-height: 1.4;
+  }
+
+  .is-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ch-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50;
+  }
+
+  .stuff {
+    padding-left: 0;
+  }
+
+  .sec4img {
+    width: 80%;
+  }
+
+  .section4 {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #bl4 {
+    width: auto;
+  }
+
+  .sec4head {
+    font-size: 25;
+  }
+
+  .sec4para {
+    font-size: 15;
+  }
+
+  .blacklist-img {
+    width: auto;
+    height: auto;
+  }
+
+  .section4a {
+    margin-bottom: 40;
+  }
+
+  #eye {
+    width: auto;
+    height: auto;
+  }
+
+  .section5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 100;
+    height: 28;
+    margin-bottom: 50;
+    margin-right: 0;
+  }
+
+  #v {
+    width: 100;
+    height: 22;
+  }
+
+  #hp {
+    width: 100;
+    height: 38;
+  }
+
+  #m {
+    width: 100;
+    height: 28;
+  }
+
+  #sec6head {
+    font-size: 25;
+    width: 82%;
+  }
+
+  .section7 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footers {
+    flex-direction: column;
+  }
+
+  .foot {
+    text-align: center;
+    margin-right: 0;
+    font-size: 16;
+    margin-bottom: 5;
+  }
+
+  .x {
+    margin-right: 0;
+  }
+
+  .cc {
+    margin-right: 0;
+    margin-bottom: 15;
+  }
+
+  .footericons {
+    margin-right: auto;
+    margin-top: 30;
   }
 }
